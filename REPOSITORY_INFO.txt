@@ -1,0 +1,3 @@
+Repository: SSeoSangwon/ReserveForcesTrainingApp
+Description: Spring 2023 · SKKU Mobile App Programming Lab (SWE3047) Project
+Default branch: main

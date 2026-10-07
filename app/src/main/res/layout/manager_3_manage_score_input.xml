@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_skkuV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_skkuH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <ImageView
+        android:id="@+id/imageView_skku"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_skkuV"
+        app:layout_constraintTop_toTopOf="@id/guideline_skkuH"
+        app:srcCompat="@drawable/skku"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#111b5d" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:text="place"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="100dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <ImageView
+        android:id="@+id/imageView_army"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/army_2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:elevation="1dp"
+        android:gravity="center_vertical"
+        android:text="name"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toEndOf="@id/imageView_army"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_armynum"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:elevation="1dp"
+        android:text="number"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        app:layout_constraintStart_toEndOf="@id/imageView_army"
+        app:layout_constraintTop_toBottomOf="@id/textView_name" />
+
+    <TextView
+        android:id="@+id/textView_t0"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="훈련내용"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/textView_t1"
+        app:layout_constraintEnd_toStartOf="@id/textView_time0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_date" />
+
+    <TextView
+        android:id="@+id/textView_t1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="안보교육"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/textView_t2"
+        app:layout_constraintEnd_toStartOf="@id/edittext_time1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t0" />
+
+    <TextView
+        android:id="@+id/textView_t2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="검문소"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_t3"
+        app:layout_constraintEnd_toStartOf="@id/edittext_time2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t1" />
+
+    <TextView
+        android:id="@+id/textView_t3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="화생방"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_t4"
+        app:layout_constraintEnd_toStartOf="@id/edittext_time3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t2" />
+
+    <TextView
+        android:id="@+id/textView_t4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="구급법"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_t5"
+        app:layout_constraintEnd_toStartOf="@id/edittext_time4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t3" />
+
+    <TextView
+        android:id="@+id/textView_t5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="총기손질"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_t6"
+        app:layout_constraintEnd_toStartOf="@id/edittext_time5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t4" />
+
+    <TextView
+        android:id="@+id/textView_t6"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="사격훈련"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_t7"
+        app:layout_constraintEnd_toStartOf="@id/edittext_time6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t5" />
+
+    <TextView
+        android:id="@+id/textView_t7"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="시가지 전투"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/buttonInput"
+        app:layout_constraintEnd_toStartOf="@id/edittext_time7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t6" />
+
+    <android.widget.Button
+        android:id="@+id/buttonInput"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#404040"
+        android:text="입력"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_t7" />
+
+    <TextView
+        android:id="@+id/textView_time0"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="완료시간"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_time1"
+        app:layout_constraintEnd_toStartOf="@id/textView_score0"
+        app:layout_constraintStart_toEndOf="@id/textView_t0"
+        app:layout_constraintTop_toBottomOf="@id/textView_date" />
+
+    <EditText
+        android:id="@+id/edittext_time1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="--:--"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_time2"
+        app:layout_constraintEnd_toStartOf="@id/edittext_score1"
+        app:layout_constraintStart_toEndOf="@id/textView_t1"
+        app:layout_constraintTop_toBottomOf="@id/textView_time0" />
+
+    <EditText
+        android:id="@+id/edittext_time2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="--:--"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_time3"
+        app:layout_constraintEnd_toStartOf="@id/edittext_score2"
+        app:layout_constraintStart_toEndOf="@id/textView_t2"
+        app:layout_constraintTop_toBottomOf="@id/edittext_time1" />
+
+    <EditText
+        android:id="@+id/edittext_time3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="--:--"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_time4"
+        app:layout_constraintEnd_toStartOf="@id/edittext_score3"
+        app:layout_constraintStart_toEndOf="@id/textView_t3"
+        app:layout_constraintTop_toBottomOf="@id/edittext_time2" />
+
+    <EditText
+        android:id="@+id/edittext_time4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="--:--"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_time5"
+        app:layout_constraintEnd_toStartOf="@id/edittext_score4"
+        app:layout_constraintStart_toEndOf="@id/textView_t4"
+        app:layout_constraintTop_toBottomOf="@id/edittext_time3" />
+
+    <EditText
+        android:id="@+id/edittext_time5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="--:--"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_time6"
+        app:layout_constraintEnd_toStartOf="@id/edittext_score5"
+        app:layout_constraintStart_toEndOf="@id/textView_t5"
+        app:layout_constraintTop_toBottomOf="@id/edittext_time4" />
+
+    <EditText
+        android:id="@+id/edittext_time6"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="--:--"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_time7"
+        app:layout_constraintEnd_toStartOf="@id/edittext_score6"
+        app:layout_constraintStart_toEndOf="@id/textView_t6"
+        app:layout_constraintTop_toBottomOf="@id/edittext_time5" />
+
+    <EditText
+        android:id="@+id/edittext_time7"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="--:--"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/buttonInput"
+        app:layout_constraintEnd_toStartOf="@id/edittext_score7"
+        app:layout_constraintStart_toEndOf="@id/textView_t7"
+        app:layout_constraintTop_toBottomOf="@id/edittext_time6" />
+
+    <TextView
+        android:id="@+id/textView_score0"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="점수"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_score1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textView_time0"
+        app:layout_constraintTop_toBottomOf="@id/textView_date" />
+
+    <EditText
+        android:id="@+id/edittext_score1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_score2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_time1"
+        app:layout_constraintTop_toBottomOf="@id/textView_score0" />
+
+    <EditText
+        android:id="@+id/edittext_score2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_score3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_time2"
+        app:layout_constraintTop_toBottomOf="@id/edittext_score1" />
+
+    <EditText
+        android:id="@+id/edittext_score3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_score4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_time3"
+        app:layout_constraintTop_toBottomOf="@id/edittext_score2" />
+
+    <EditText
+        android:id="@+id/edittext_score4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_score5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_time4"
+        app:layout_constraintTop_toBottomOf="@id/edittext_score3" />
+
+    <EditText
+        android:id="@+id/edittext_score5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_score6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_time5"
+        app:layout_constraintTop_toBottomOf="@id/edittext_score4" />
+
+    <EditText
+        android:id="@+id/edittext_score6"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_score7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_time6"
+        app:layout_constraintTop_toBottomOf="@id/edittext_score5" />
+
+    <EditText
+        android:id="@+id/edittext_score7"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/buttonInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_time7"
+        app:layout_constraintTop_toBottomOf="@id/edittext_score6" />
+
+    <ImageButton
+        android:id="@+id/imageButton_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:background="#111b5d"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_divide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back_white"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

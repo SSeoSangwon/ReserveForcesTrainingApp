@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+        <TextView
+            android:id="@+id/textviewnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="이름"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textviewaddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="주소"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@id/textviewnameTextView"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/textviewlinkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="약도"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintTop_toBottomOf="@id/textviewaddressTextView"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="360dp"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="openLink"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textviewnameTextView"/>
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="360dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/textviewaddressTextView"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+
+        <TextView
+            android:id="@+id/linkTextView"
+            android:layout_width="360dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:clickable="true"
+            android:onClick="openLink"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/textviewlinkTextView"
+            app:layout_constraintTop_toBottomOf="@id/addressTextView"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

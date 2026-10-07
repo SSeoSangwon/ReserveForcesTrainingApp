@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_skkuV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_skkuH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <ImageView
+        android:id="@+id/imageView_skku"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_skkuV"
+        app:layout_constraintTop_toTopOf="@id/guideline_skkuH"
+        app:srcCompat="@drawable/skku"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#111b5d" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="100dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <ImageView
+        android:id="@+id/imageView_army"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="1dp"
+        app:srcCompat="@drawable/army_2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="이       름"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/textView_birth"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="@id/guideline_divide" />
+
+    <TextView
+        android:id="@+id/textView_birth"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="생년월일"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_phonenum"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/textView_name" />
+
+    <TextView
+        android:id="@+id/textView_phonenum"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="전화번호"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_armynum"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/textView_birth" />
+
+    <TextView
+        android:id="@+id/textView_armynum"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="군       번"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_pw"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/textView_phonenum" />
+
+    <TextView
+        android:id="@+id/textView_pw"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="비밀번호"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/button_signup"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/textView_armynum" />
+
+    <android.widget.Button
+        android:id="@+id/button_signup"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#404040"
+        android:text="가입"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_pw" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#f0f0f0"
+        android:hint="이름 입력"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/edittext_birth"
+        app:layout_constraintEnd_toEndOf="@id/guideline_skkuV"
+        app:layout_constraintStart_toEndOf="@id/textView_name"
+        app:layout_constraintTop_toTopOf="@id/guideline_divide"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittext_birth"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#f0f0f0"
+        android:hint="생년월일 입력"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/edittext_phonenum"
+        app:layout_constraintEnd_toEndOf="@id/guideline_skkuV"
+        app:layout_constraintStart_toEndOf="@id/textView_birth"
+        app:layout_constraintTop_toBottomOf="@id/edittext_name"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittext_phonenum"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#f0f0f0"
+        android:hint="전화번호 입력"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/edittext_armynum"
+        app:layout_constraintEnd_toEndOf="@id/guideline_skkuV"
+        app:layout_constraintStart_toEndOf="@id/textView_phonenum"
+        app:layout_constraintTop_toBottomOf="@id/edittext_birth"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittext_armynum"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#f0f0f0"
+        android:hint="군번 입력"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/edittext_pw"
+        app:layout_constraintEnd_toEndOf="@id/guideline_skkuV"
+        app:layout_constraintStart_toEndOf="@id/textView_armynum"
+        app:layout_constraintTop_toBottomOf="@id/edittext_phonenum"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edittext_pw"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#f0f0f0"
+        android:hint="비밀번호 입력"
+        android:paddingStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/button_signup"
+        app:layout_constraintEnd_toEndOf="@id/guideline_skkuV"
+        app:layout_constraintStart_toEndOf="@id/textView_pw"
+        app:layout_constraintTop_toBottomOf="@id/edittext_armynum"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <android.widget.Button
+        android:id="@+id/button_numcheck"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="#111b5d"
+        android:text="중복확인"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/edittext_pw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_armynum"
+        app:layout_constraintTop_toBottomOf="@id/edittext_phonenum"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="#111b5d"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back_white"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView_birthex"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="ex) 000419"
+        android:textAlignment="center"
+        android:textColor="#606060"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_phonenum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_birth"
+        app:layout_constraintTop_toBottomOf="@id/textView_name" />
+
+    <TextView
+        android:id="@+id/textView_phonenumex"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="ex) 01012345678"
+        android:textAlignment="center"
+        android:textColor="#606060"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@id/textView_armynum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edittext_phonenum"
+        app:layout_constraintTop_toBottomOf="@id/textView_birth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

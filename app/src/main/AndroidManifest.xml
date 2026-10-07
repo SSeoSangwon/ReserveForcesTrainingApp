@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="CoarseFineLocation">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="예비군훈련"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReserveForcesTraining"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+        <activity
+            android:name=".UI_1_StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI_2_LogInActivity" />
+        <activity android:name=".UI_3_SignUpActivity" />
+        <activity android:name=".Manager_1_MainActivity" />
+        <activity android:name=".Manager_2_ApplyActivity" />
+        <activity android:name=".Manager_3_ManageActivity" />
+        <activity android:name=".Manager_3_ManageScoreInputActivity" />
+        <activity android:name=".User_1_MainActivity"/>
+        <activity android:name=".User_3_TrainingActivity" />
+        <activity android:name=".User_5_MapActivity" />
+        <activity android:name=".User_4_CallActivity" />
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+</manifest>
